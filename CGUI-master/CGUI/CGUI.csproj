@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>CGUI</RootNamespace>
+    <AssemblyName>CGUI</AssemblyName>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CGAlgorithms\CGAlgorithms.csproj" />
+    <ProjectReference Include="..\CGUtilities\CGUtilities.csproj" />
+  </ItemGroup>
+
+</Project>
