@@ -1,0 +1,46 @@
+name: sync algorithms solution to main
+
+on:
+  push:
+    branches:
+      - sdk-8
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure Git User
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: switch to main and sync
+        run: |
+
+          git fetch origin
+
+          git checkout main
+          git pull origin main
+
+          # Pull specific folders or files from SDK 8 branch
+          # Example: pulling everything inside 'src/' and specific file 'Program.cs'
+          # NOTE: .csproj and other config files outside these paths remain completely untouched on main.
+          git checkout origin/sdk-8 -- CGUI-master/CGAlgorithms/Algorithms/
+          # Add more paths if needed, e.g.:
+          # git checkout origin/sdk-8 -- Controllers/
+
+          # Check if there are actual changes to commit
+          git status
+          if git diff --staged --quiet; then
+            echo "No changes to sync."
+          else
+            git commit -m "auto-sync code updates from sdk-8 branch"
+            git push origin main
+          fi
