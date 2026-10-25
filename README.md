@@ -1,3 +1,17 @@
+# Progress so far
+
+---
+
+- [] DivideAndConquer
+- [X] ExtremePoints
+- [] ExtremeSegment
+- [] GrahamScan
+- [] Incremental
+- [] JarvisMarch
+- [X] QuickHull
+
+---
+
 # CGUI Repository & Collaboration Guide
 
 This document outlines the changes made to modernize this repository from **.NET Framework 4.5** to **.NET 8 SDK-style**, as well as instructions for building, running unit tests, and debugging C# code for developers on Linux and Windows.
