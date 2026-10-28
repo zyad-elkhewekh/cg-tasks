@@ -2,11 +2,11 @@
 
 ---
 
-- [ ] DivideAndConquer
+- [X] DivideAndConquer
 - [X] ExtremePoints
 - [ ] ExtremeSegment
 - [ ] GrahamScan
-- [ ] Incremental
+- [X] Incremental
 - [ ] JarvisMarch
 - [X] QuickHull
 
