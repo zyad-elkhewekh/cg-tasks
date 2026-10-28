@@ -7,7 +7,7 @@
 - [ ] ExtremeSegment
 - [ ] GrahamScan
 - [X] Incremental
-- [ ] JarvisMarch
+- [X] JarvisMarch
 - [X] QuickHull
 
 ---
