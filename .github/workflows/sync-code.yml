@@ -33,6 +33,7 @@ jobs:
           # Example: pulling everything inside 'src/' and specific file 'Program.cs'
           # NOTE: .csproj and other config files outside these paths remain completely untouched on main.
           git checkout origin/sdk-8 -- CGUI-master/CGAlgorithms/Algorithms/
+          git checkout origin/sdk-8 -- README.md
           # Add more paths if needed, e.g.:
           # git checkout origin/sdk-8 -- Controllers/
 

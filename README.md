@@ -5,7 +5,7 @@
 - [X] DivideAndConquer
 - [X] ExtremePoints
 - [ ] ExtremeSegment
-- [ ] GrahamScan
+- [X] GrahamScan
 - [X] Incremental
 - [X] JarvisMarch
 - [X] QuickHull
