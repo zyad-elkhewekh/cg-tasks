@@ -18,7 +18,7 @@
 
 - This repo has 2 branches: main and sdk-8, one obviously uses sdk 8 while the other uses og template sdk, write your code in whichever branch you like, push and pull actions are auto synced
 
-- To test a finished algorithm write in a terminal: `dotnet test CGAlgorithmsUnitTest/CGAlgorithmsUnitTest.csproj --filter "FullyQualifiedName~AlgorithmNameTest", or simply run from VS.
+- To test a finished algorithm write in a terminal: `dotnet test CGAlgorithmsUnitTest/CGAlgorithmsUnitTest.csproj --filter "FullyQualifiedName~AlgorithmNameTest"`, or simply run from VS.
 
 ---
 
